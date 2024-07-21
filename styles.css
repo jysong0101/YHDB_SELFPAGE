@@ -17,6 +17,7 @@ body {
     color: #400;
     cursor: pointer;
     position: relative;
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
 }
 
 .tab::after {

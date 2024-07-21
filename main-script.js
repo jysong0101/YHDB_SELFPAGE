@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
-    const content = document.querySelector('.content h1');
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -10,8 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add active class to the clicked tab
             tab.classList.add('active');
             
-            // Update the content
-            content.textContent = tab.dataset.content;
+            // Redirect to the linked page
+            const link = tab.dataset.link;
+            window.location.href = link;
         });
     });
 });
