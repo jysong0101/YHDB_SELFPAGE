@@ -50,3 +50,18 @@ body {
     font-size: 36px;
     color: #400;
 }
+
+/* 이미 추가된 스타일 외 추가할 부분 */
+.forHome {
+    margin-top: 20px;
+}
+
+.forHome img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.forHome p {
+    margin-top: 10px;
+    text-align: img;
+}
