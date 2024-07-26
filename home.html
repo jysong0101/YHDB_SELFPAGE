@@ -110,21 +110,41 @@
         .sections {
             display: flex;
             flex-direction: column;
-            align-items: center;
             overflow-y: auto;
         }
 
-        .section {
+        .brief {
             width: 95%;
             padding: 20px;
-            margin: 20px 0;
+            margin-left: 30px;
             text-align: left;
             box-sizing: border-box; /* 패딩과 보더를 포함한 전체 너비와 높이를 설정 */
+
         }
 
-        .section h1 {
-            size: 50px;
+        .briefitem {
+            display: flex;
+            align-items: center; /* 이미지와 텍스트를 수직 가운데 정렬 */
         }
+
+        .brief h1 {
+            size: 150px;
+            margin-bottom: 0px;
+        }
+
+        .briefitem h2 {
+            size: 40px;
+            text-align: left; /* 왼쪽 정렬 */
+        }
+
+        .briefitem img {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-right: 10px;
+            margin-left: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -152,11 +172,21 @@
             </div>
         </div>
         <div class="sections">
-            <div class="section">
+            <div class="brief">
                 <h1>Brief</h1>
-                임시 제거
             </div>
-            <div class="section">
+
+            <div class="briefitem">
+                <img src="hat-icon.png">
+                <h2>경북대학교 (Kyungpook National University) 2020 ~ 2026</h2>
+            </div>
+
+            <div class="briefitem">
+                <img src="business-bag-icon.png">
+                <h2>라인페이 개발자 (LINE Pay Developer> 2026 ~</h2>
+            </div>
+
+            <div class="brief">
                 <h1>Introduction</h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet turpis sed sapien facilisis tempus. Integer a dui eget leo lacinia commodo. Praesent vitae turpis id sem efficitur viverra. Nullam sagittis volutpat tortor at dapibus. Integer et turpis nec libero luctus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus aliquet malesuada orci, vel commodo sapien. Integer vitae vehicula lacus. Donec quis odio ut arcu vehicula facilisis. Vestibulum aliquet arcu sit amet risus consectetur, ac lacinia nulla gravida. Cras vehicula neque ut elit finibus, at vulputate neque vestibulum. In blandit erat at turpis suscipit, at tincidunt tortor cursus. Duis consectetur, odio nec tincidunt dapibus, lorem dui congue nunc, nec scelerisque sapien nisl at odio. Proin ac tortor at ligula gravida tincidunt.
             </div>
