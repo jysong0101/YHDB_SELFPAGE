@@ -3,22 +3,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-}
-
 .tab {
-    padding: 10px 20px;
-    text-align: center;
+    padding: 10px 10px; /* 좌우 패딩 값 */
+    text-align: left; /* 왼쪽 정렬 */
     font-size: 20px;
     font-weight: bold;
     color: #400;
     cursor: pointer;
     position: relative;
     text-decoration: none; /* 링크의 기본 밑줄 제거 */
+    margin-left: 100px; /* 탭들 간의 간격*/
 }
+
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬을 위해 변경 */
+    padding: 20px 0;
+}
+
 
 .tab::after {
     content: "";
@@ -38,32 +40,64 @@ body {
     transform: scaleX(1);
 }
 
-.content {
+.forHome {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.profile {
+    text-align: left;
+    margin-left: 110px;
+}
+
+.profile-img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-left: -110px;
+}
+
+.profile h2 {
+    margin-top: 10px;
+}
+
+.links {
     display: flex;
-    justify-content: center;
+    margin: 30px;
+    justify-content: left;
+}
+
+.link-box {
+    display: flex;
     align-items: center;
-    height: calc(100vh - 80px);
+    justify-content: center;
+    flex: 1;
+    max-width: 100px;
+    max-height: 50px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    box-sizing: border-box;
     text-align: center;
 }
 
-.content h1 {
-    font-size: 36px;
-    color: #400;
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
 }
 
-/* 이미 추가된 스타일 외 추가할 부분 */
-.forHome {
-    margin-top: 20px;
-}
-
-.forHome img {
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.forHome p {
-    margin-top: 10px;
-    text-align: img;
+.section {
+    width: 95%;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    box-sizing: border-box; /* 패딩과 보더를 포함한 전체 너비와 높이를 설정 */
 }
 
 /* 타임 라인 */
